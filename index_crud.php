@@ -3,7 +3,7 @@ require_once 'config/connect.php';
 ?>
 
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link href="config/connect_style.css" rel="stylesheet">
@@ -32,7 +32,7 @@ require_once 'config/connect.php';
         <tr>
             <td><?=$addcomment[0] ?></td>
             <td><?=$addcomment[2]?></td>
-            <td><?=$addcomment[1]  . $addcomment[3] ?></td>
+            <td><?=$addcomment[1]  . '<br>' . $addcomment[3] ?></td>
             <td></td>
         </tr>
     <?php
@@ -54,13 +54,14 @@ require_once 'config/connect.php';
     <!-- Выберите файл -->
         <input type="file" name="photo" accept="image/*">
     <!-- Кнопка загрузки -->
-        <input type = "submit" name = "upload" value = "Download">
+<!--        <input type = "submit" name = "upload" value = "Download">-->
     <br> <br> <br>
     <!-- Кнопка добавления коммента -->
     <button type="submit">Add comment</button>
 
 
 </form>
+
 
 </body>
 </html>

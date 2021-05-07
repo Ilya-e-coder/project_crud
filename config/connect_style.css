@@ -11,6 +11,8 @@ th {
 td {
     padding: 10px;
     background: rgba(253,202,255,0.79);
+    width: 1px; /* Ширина блока */
+    word-break: normal; /* Перенос слов */
 }
 p {
     font-weight: bold;
