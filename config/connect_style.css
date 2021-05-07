@@ -1,7 +1,12 @@
+table {
+
+    width: 60%;
+}
 th {
     padding: 10px;
     background: #606060;
     color: white;
+
 }
 td {
     padding: 10px;
@@ -9,4 +14,6 @@ td {
 }
 p {
     font-weight: bold;
+
 }
+
