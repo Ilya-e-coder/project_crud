@@ -16,6 +16,8 @@ require_once 'config/connect.php';
         <th>Date</th>
         <th>Posts</th>
         <th>Last Update</th>
+        <th>Update </th>
+        <th>Delete </th>
     </tr>
 
     <?php
@@ -33,7 +35,10 @@ require_once 'config/connect.php';
             <td><?=$addcomment[0] ?></td>
             <td><?=$addcomment[2]?></td>
             <td><?=$addcomment[1]  . '<br>' . $addcomment[3] ?></td>
-            <td></td>
+            <td><?=$addcomment[4]?></td>
+            <!--Ссылка на страницу редактирования с указанием id -->
+            <td><a style="color: rgba(101,193,76,0.79)" href="update.php?id=<?=$addcomment[0] ?>">Update</a></td>
+            <td><a style="color: rgba(255,55,38,0.79)" href="db_reprository/db_delete.php?id=<?=$addcomment[0] ?>">Delete</a></td>
         </tr>
     <?php
     }
